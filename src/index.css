@@ -1,0 +1,13 @@
+body {
+    margin: 0;
+    padding: 1rem;
+}
+
+.row {
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.label {
+    width: 250px;
+}

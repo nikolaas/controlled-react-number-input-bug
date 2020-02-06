@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Controlled React input bug</title>
+    </head>
+    <body>
+        <div>
+            <div>A controlled React input with type "number" clears a value when a user add a dot to the value.</div>
+            <div>Steps to reproduce:</div>
+            <ol>
+                <li>Click to an input</li>
+                <li>Type "10"</li>
+                <li>Click to another input</li>
+                <li>Click to the first input</li>
+                <li>Add "." to the end</li>
+                <li>Click to another input</li>
+            </ol>
+        </div>
+        <div id="controlledInput" class="row"></div>
+        <div id="uncontrolledInput" class="row"></div>
+        <div id="inputWithoutReact" class="row">
+            <span class="label">Input without React</span>
+            <input type="number" name="input-without-react" />
+        </div>
+    </body>
+</html>
